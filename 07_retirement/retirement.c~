@@ -1,0 +1,13 @@
+#include stdlib.h
+#include stdio.h
+
+typedef struct{
+  int months;
+  double contribution;
+  double rete_of_return;
+} _retire_info
+
+void retirement(int startAge, double initial, retire_info working, retire_info retired){
+
+
+}
