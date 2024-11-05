@@ -1,0 +1,12 @@
+#include <stddef.h>
+#include <stdlib.h>
+
+size_t maxSeq(int * array, size_t n);
+
+int main(void){
+  int t1[] = {1,-2,3,4};
+  int * t1_p = t1;
+  maxSeq(t1_p, 6);
+    
+  return EXIT_SUCCESS;
+}

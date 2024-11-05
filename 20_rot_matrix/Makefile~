@@ -1,0 +1,11 @@
+CC = gcc
+CFLAGS = -Wall -g
+
+rotate-matrix: rotate.o read-matrix.o
+	$(CC) $(CFLAGS) -o read-matrix rotate.o read-matrix.o
+
+rotate.o: rotate.c
+	$(CC) $(CFLAGS) -o rotate.c
+
+clean:
+	rm -f *.o rotate-matrix

@@ -1,0 +1,19 @@
+CFLAGS = -pedantic -std=gnu99 -Wall -Werror
+CC = gcc
+TARGET = power
+
+SRC = power.c test-power.c
+OBJS = power.o test-power.o
+
+$(TARGET):$(OBJS)
+   $(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
+
+
+power.o:power.c
+   $(CC) $(CFLAGS) -c power.c -o power.o
+
+test-power.o:test-power.c
+   $(CC) $(CFLAGS) -c test-power.c -o test-power.o
+
+clear:
+   rm -f $(TARGET) $(OBJS)
